@@ -6,7 +6,7 @@ description   = "A new awesome nimble package"
 license       = "MIT"
 srcDir        = "src"
 binDir        = "bin"
-bin           = @["client", "server"]
+bin           = @["client", "protocol"]
 
 
 
