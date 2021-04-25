@@ -5,3 +5,6 @@ if paramCount() == 0:
 
 let serverAddr = paramStr(1)
 echo "Connecting to ", serverAddr
+
+let message = stdin.readLine()
+echo "Sending\"", message, "\""
