@@ -46,5 +46,7 @@ proc loop(server: Server, port = 7687) {.async.} =
     server.clients.add(client)
     asyncCheck processMessages(server, client)
 
-var server = newServer()
-waitFor loop(server)
+when isMainModule:
+  var server = newServer()
+  echo "Server initialised!!"
+  waitFor loop(server)

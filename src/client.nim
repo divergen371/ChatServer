@@ -25,7 +25,7 @@ var messageFlowVar = spawn stdin.readLine()
 
 while true:
   if messageFlowVar.isReady:
-    let message = createMessage("Anonymous", ^messageFlowVar)
+    let message = createMessage(username, ^messageFlowVar)
     asyncCheck socket.send(message)
     messageFlowVar = spawn stdin.readLine()
   
